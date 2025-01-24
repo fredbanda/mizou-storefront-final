@@ -20,7 +20,7 @@ const Collections = async () => {
                 alt={collection.title}
                 width={250}
                 height={150}
-                className="rounded-lg cursor-pointer"
+                className="rounded-lg cursor-pointer w-full object-contain"
               />
             </Link>
           ))}

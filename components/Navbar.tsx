@@ -132,7 +132,7 @@ const Navbar = () => {
                   pathname === "/products" && "text-red-1"
                 }`}
               >
-                Our Collections
+                Collections
               </Link>
               <Link
                 href="/contact"
