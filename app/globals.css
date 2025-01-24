@@ -6,7 +6,7 @@ html,
 body
 :root {
   font-family: 'Space Grotesk', sans-serif;
-  background-color: #f3f3f3; /* Corrected color format */
+  background-color: #f3f3f3; 
   /*background-color: #e4e2d6; Corrected color format */
  min-height: 100vh;  
   margin: 0;  

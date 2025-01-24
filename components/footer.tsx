@@ -89,7 +89,12 @@ const Footer = () => {
                 <Image src="/logo.png" width={150} height={150} alt="logo" />
               </h6>
               <p>
-            From timeless classics to bold, contemporary designs, our collections are curated for every occasion, ensuring you always shine. At Mizou Accessories, quality meets artistry, with a commitment to exceptional craftsmanship and customer satisfaction. Step into a world of modern elegance and let your jewelry tell a story as unique as you are.
+                From timeless classics to bold, contemporary designs, our
+                collections are curated for every occasion, ensuring you always
+                shine. At Mizou Accessories, quality meets artistry, with a
+                commitment to exceptional craftsmanship and customer
+                satisfaction. Step into a world of modern elegance and let your
+                jewelry tell a story as unique as you are.
               </p>
             </div>
             <div className="">
@@ -103,7 +108,7 @@ const Footer = () => {
               </p>
               <p className="mb-4">
                 <Link href="#!" className="text-gray-500 dark:text-neutral-200">
-                  Yutake Collection 
+                  Yutake Collection
                 </Link>
               </p>
               <p className="mb-4">
@@ -205,38 +210,38 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-200 flex justify-center items-center p-6 text-center dark:bg-neutral-700">
+      <div className="bg-neutral-200 flex flex-col md:flex-row justify-center items-center p-6 text-center dark:bg-neutral-700 space-y-4 md:space-y-0 md:space-x-4">
         <span className="mr-2">© {currentYear} Copyright:</span>
         <Link
-          className="font-bold text-lg  dark:text-neutral-100 mr-4"
+          className="font-bold text-lg dark:text-neutral-100 mr-4"
           href="https://mizou.co.za/"
         >
-          Mizou Accessories .
+          Mizou Accessories.
         </Link>
-        <div className="flex space-x-4 text-[12px]">
+        <div className="flex flex-wrap justify-center space-x-4 md:space-x-0 md:space-y-0 text-[12px]">
           <Link
-            className="text-neutral-600 dark:text-neutral-400 hover:underline"
+            className="text-neutral-600 dark:text-neutral-400 hover:underline mr-2"
             href="/shipping-policy"
           >
-            Shipping Policy .
+            Shipping Policy.
           </Link>
           <Link
-            className="text-neutral-600 dark:text-neutral-400 hover:underline"
+            className="text-neutral-600 dark:text-neutral-400 hover:underline mr-2"
             href="/return-policy"
           >
-            Return Policy .
+            Return Policy.
           </Link>
           <Link
-            className="text-neutral-600 dark:text-neutral-400 hover:underline"
+            className="text-neutral-600 dark:text-neutral-400 hover:underline mr-2"
             href="/refund-policy"
           >
-            Refund Policy .
+            Refund Policy.
           </Link>
           <Link
             className="text-neutral-600 dark:text-neutral-400 hover:underline"
             href="/terms-and-conditions"
           >
-            Terms and Conditions .
+            Terms and Conditions.
           </Link>
         </div>
       </div>

@@ -1,6 +1,5 @@
 "use client";
 
-
 import useCart from "@/lib/hooks/useCart";
 import { UserButton, useUser } from "@clerk/nextjs";
 import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
@@ -32,7 +31,7 @@ const Navbar = () => {
   const router = useRouter();
   const { user } = useUser();
 
-  const cart = useCart()
+  const cart = useCart();
 
   const [dropdownMenu, setDropdownMenu] = useState(false);
   const [query, setQuery] = useState("");
@@ -41,7 +40,7 @@ const Navbar = () => {
     <div>
       {/* Add the ticker banner here */}
       <TickerBanner />
-      <div className="w-full sticky top-0 z-10 py-2 px-10 flex gap-2 justify-between items-center bg-mizou shadow-xl max-sm:px-2">
+      <div className="w-full sticky top-0 z-10 py-2 px-10 flex gap-2 justify-between items-center bg-mizou1 shadow-xl max-sm:px-2">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={200} height={150} />
         </Link>
@@ -69,6 +68,16 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
+          {user && (
+            <Link
+              href="/orders"
+              className={`hover:text-red-1 ${
+                pathname === "/orders" && "text-red-1"
+              }`}
+            >
+              Orders
+            </Link>
+          )}
         </div>
 
         <div className="flex gap-3 border border-grey-2 px-3 py-4 items-center rounded-lg">
@@ -103,17 +112,6 @@ const Navbar = () => {
           >
             Wishlist
           </Link>
-
-          {user && (
-            <Link
-              href="/orders"
-              className={`hover:text-red-1 ${
-                pathname === "/orders" && "text-red-1"
-              }`}
-            >
-              Orders
-            </Link>
-          )}
 
           <Menu
             className="cursor-pointer lg:hidden"
@@ -186,4 +184,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

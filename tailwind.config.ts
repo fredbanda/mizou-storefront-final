@@ -95,7 +95,8 @@ export default {
           "blue-2": "#E9F5FE",
           "blue-3": "#F5F7F9",
           "red-1": "#FF0000",
-          "mizou": "#f3f3f3"
+          "mizou": "#f3f3f3",
+          "mizou1": "#e4e2d6"
         },
     },
   },
