@@ -119,7 +119,7 @@ const Navbar = () => {
           />
 
           {dropdownMenu && (
-            <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-mizou text-base-bold lg:hidden">
+            <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-transparent text-base-bold lg:hidden">
               <Link
                 href="/"
                 className={`hover:text-red-1 ${pathname === "/" && "text-red-1"}`}
