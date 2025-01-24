@@ -17,7 +17,7 @@ const CollectionDetails = async ({
         width={1500}
         height={1000}
         alt="collection"
-        className="w-full h-[200px] sm:h-[400px] object-cover rounded-xl"
+        className="w-full h-[300px] sm:h-[400px] object-cover rounded-xl"
       />
       <p className="text-heading3-bold">{collectionDetails.title}</p>
       <p className="text-body-normal text-slate-600 text-center max-w-[900px]">

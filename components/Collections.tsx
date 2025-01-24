@@ -14,6 +14,7 @@ const Collections = async () => {
         <div className="flex flex-wrap items-center justify-center gap-8">
           {collections.map((collection: CollectionType) => (
             <Link href={`/collections/${collection._id}`} key={collection._id}>
+               
               <Image
                 key={collection._id}
                 src={collection.image}
@@ -22,6 +23,7 @@ const Collections = async () => {
                 height={150}
                 className="rounded-lg cursor-pointer w-full object-contain"
               />
+             <p className="text-heading4-bold text-center mt-2">{collection.title}</p>
             </Link>
           ))}
         </div>
