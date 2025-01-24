@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className=" bg-neutral-100 text-center text-gray-500 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+    <footer className=" bg-mizou text-center text-gray-500 dark:bg-neutral-600 dark:text-neutral-200 shadow-lg lg:text-left">
       <div className="border-b-2 border-neutral-200 p-6 dark:border-neutral-500">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-center lg:justify-between">
@@ -210,7 +210,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-200 flex flex-col md:flex-row justify-center items-center p-6 text-center dark:bg-neutral-700 space-y-4 md:space-y-0 md:space-x-4">
+      <div className="bg-mizou flex flex-col md:flex-row justify-center items-center p-6 text-center dark:bg-neutral-700 space-y-4 md:space-y-0 md:space-x-4">
         <span className="mr-2">© {currentYear} Copyright:</span>
         <Link
           className="font-bold text-lg dark:text-neutral-100 mr-4"
