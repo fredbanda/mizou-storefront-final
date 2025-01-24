@@ -23,7 +23,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
         <p className="text-heading3-bold">{productInfo.title}</p>
         <HeartFavorite product={productInfo} />
       </div>
-      <p className="text-heading4-bold">ZAR {productInfo.price}</p>
+      <p className="text-heading4-bold text-emerald-800">ZAR {productInfo.price}</p>
 
       <div className="flex flex-col gap-2">
         <p className="text-heading3-bold text-gray-600">Category:</p>
