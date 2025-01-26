@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ToasterProvider from "@/lib/providers/ToasterProvider";
 import Footer from "@/components/footer";
+import EmailSubscriptionModal from "@/components/subscription-modal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning={true}>
         <body className={inter.className}>
+        <EmailSubscriptionModal />
           <ToasterProvider />
           <Navbar />
           {children}
