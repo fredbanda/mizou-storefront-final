@@ -10,7 +10,7 @@ const EmailSubscriptionModal: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 15000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
